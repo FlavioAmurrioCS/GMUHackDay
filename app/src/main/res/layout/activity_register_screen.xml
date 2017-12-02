@@ -76,7 +76,7 @@
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint=""/>
+                android:hint="(703)555-5555"/>
         </LinearLayout>
 
         <LinearLayout
@@ -90,13 +90,15 @@
 
             <EditText
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:hint="password"/>
         </LinearLayout>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Register" />
+            android:text="Sign Up!"
+            android:onClick="signUpClick"/>
 
 
     </LinearLayout>
