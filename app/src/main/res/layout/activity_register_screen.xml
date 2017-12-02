@@ -3,108 +3,83 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
-    tools:context="com.flavio.gmuhackday.RegisterScreen"
-    android:padding="10dp">
+    tools:context="com.flavio.gmuhackday.RegisterScreen">
 
-    <TextView
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="30" />
+        android:layout_weight="1"
+        android:background="?android:attr/colorPrimary"
+        app:layout_collapseMode="pin" />
+
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
         android:gravity="center"
         android:orientation="vertical">
 
-        <LinearLayout
+        <EditText
+            android:id="@+id/et_register_firstname"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/hint_firstname"
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="First Name:" />
-
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="John"/>
-        </LinearLayout>
-
-        <LinearLayout
+        <EditText
+            android:id="@+id/et_register_lastname"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/hint_lastname"
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Last Name: " />
-
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="Smith"/>
-        </LinearLayout>
-
-        <LinearLayout
+        <EditText
+            android:id="@+id/et_register_email"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/hint_email"
+            android:inputType="textEmailAddress"
+            android:textAlignment="center" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Email: " />
-
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="johnsmith@gmu.edu"/>
-        </LinearLayout>
-
-        <LinearLayout
+        <EditText
+            android:id="@+id/et_register_phone"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/hint_phone"
+            android:inputType="phone"
+            android:textAlignment="center" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Phone: " />
-
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint=""/>
-        </LinearLayout>
-
-        <LinearLayout
+        <EditText
+            android:id="@+id/et_register_password"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Password: " />
-
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-        </LinearLayout>
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword"
+            android:textAlignment="center" />
 
         <Button
-            android:layout_width="wrap_content"
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Register" />
-
+            android:layout_weight="1"
+            android:text="@string/btn_register" />
 
     </LinearLayout>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="30" />
-
 
 </LinearLayout>
