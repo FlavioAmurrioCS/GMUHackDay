@@ -4,27 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.flavio.gmuhackday.MainActivity"
+    tools:context="com.flavio.gmuhackday.RegisterScreen"
     android:orientation="vertical">
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="email"/>
+        android:hint="UserName"/>
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Password"/>
-    <Button
+        android:text="email@gmu.edu"/>
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login"/>
+        android:text="Phone Number"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Register"/>
-
-
 
 </LinearLayout>
