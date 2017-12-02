@@ -29,9 +29,11 @@
                 android:text="First Name:" />
 
             <EditText
+                android:id="@+id/firstName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="John"/>
+                android:hint="John"
+                android:inputType="textCapWords" />
         </LinearLayout>
 
         <LinearLayout
@@ -44,9 +46,11 @@
                 android:text="Last Name: " />
 
             <EditText
+                android:id="@+id/lastName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="Smith"/>
+                android:hint="Smith"
+                android:inputType="textCapWords" />
         </LinearLayout>
 
         <LinearLayout
@@ -59,9 +63,11 @@
                 android:text="Email: " />
 
             <EditText
+                android:id="@+id/email"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="johnsmith@gmu.edu"/>
+                android:hint="johnsmith@gmu.edu"
+                android:inputType="textEmailAddress" />
         </LinearLayout>
 
         <LinearLayout
@@ -74,9 +80,11 @@
                 android:text="Phone: " />
 
             <EditText
+                android:id="@+id/phone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="(703)555-5555"/>
+                android:hint="(703)555-5555"
+                android:inputType="phone" />
         </LinearLayout>
 
         <LinearLayout
@@ -89,9 +97,11 @@
                 android:text="Password: " />
 
             <EditText
+                android:id="@+id/password"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="password"/>
+                android:hint="password"
+                android:inputType="textPassword" />
         </LinearLayout>
 
         <Button

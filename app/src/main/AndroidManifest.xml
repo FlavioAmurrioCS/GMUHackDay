@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".RegisterScreen" />
         <activity android:name=".AdViewActivity" />
-        <activity android:name=".AdInfoScreen"></activity>
+        <activity android:name=".AdInfoScreen" />
+        <activity android:name=".EnterPinScreen"></activity>
     </application>
 
 </manifest>
