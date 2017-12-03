@@ -11,6 +11,9 @@
 		14FD4634C855E769A3E673E2 /* Pods_GMU_HackDayiOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F309B224BAE1ADB095F58E75 /* Pods_GMU_HackDayiOSTests.framework */; };
 		8E6F4EFBA26984B6E8D75B4B /* Pods_GMU_HackDayiOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E73BB6BA85B97333D125A67F /* Pods_GMU_HackDayiOSUITests.framework */; };
 		D47C8A961FD387EA000E4A59 /* ItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47C8A951FD387EA000E4A59 /* ItemTableViewController.swift */; };
+		D4C814BC1FD391CB00C9B13E /* no-product-image.png in Resources */ = {isa = PBXBuildFile; fileRef = D4C814BB1FD391C900C9B13E /* no-product-image.png */; };
+		D4C814BE1FD391D100C9B13E /* hackathon-graphic.png in Resources */ = {isa = PBXBuildFile; fileRef = D4C814BD1FD391D000C9B13E /* hackathon-graphic.png */; };
+		D4C814C01FD3947900C9B13E /* AdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C814BF1FD3947900C9B13E /* AdViewController.swift */; };
 		D4D0C5D31FD3582600EF9644 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D0C5D21FD3582600EF9644 /* AppDelegate.swift */; };
 		D4D0C5D51FD3582600EF9644 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D0C5D41FD3582600EF9644 /* ViewController.swift */; };
 		D4D0C5D81FD3582600EF9644 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4D0C5D61FD3582600EF9644 /* Main.storyboard */; };
@@ -52,6 +55,9 @@
 		96B354E25871078CA00EB476 /* Pods-GMU HackDayiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMU HackDayiOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GMU HackDayiOS/Pods-GMU HackDayiOS.debug.xcconfig"; sourceTree = "<group>"; };
 		BF3D47AE5144B2EB1974E647 /* Pods-GMU HackDayiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMU HackDayiOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-GMU HackDayiOS/Pods-GMU HackDayiOS.release.xcconfig"; sourceTree = "<group>"; };
 		D47C8A951FD387EA000E4A59 /* ItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewController.swift; sourceTree = "<group>"; };
+		D4C814BB1FD391C900C9B13E /* no-product-image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "no-product-image.png"; sourceTree = "<group>"; };
+		D4C814BD1FD391D000C9B13E /* hackathon-graphic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hackathon-graphic.png"; sourceTree = "<group>"; };
+		D4C814BF1FD3947900C9B13E /* AdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdViewController.swift; sourceTree = "<group>"; };
 		D4D0C5CF1FD3582500EF9644 /* GMU HackDayiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GMU HackDayiOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4D0C5D21FD3582600EF9644 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4D0C5D41FD3582600EF9644 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -177,6 +183,8 @@
 		D4D0C6001FD3585A00EF9644 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				D4C814BD1FD391D000C9B13E /* hackathon-graphic.png */,
+				D4C814BB1FD391C900C9B13E /* no-product-image.png */,
 				D4D0C6011FD3586B00EF9644 /* mlh-logo-color.png */,
 			);
 			path = Images;
@@ -190,6 +198,7 @@
 				D4D0C60D1FD3770100EF9644 /* ValidateUserViewController.swift */,
 				D47C8A951FD387EA000E4A59 /* ItemTableViewController.swift */,
 				D4D130CE1FD388CC005E603A /* AdTableViewCell.swift */,
+				D4C814BF1FD3947900C9B13E /* AdViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -329,7 +338,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4C814BE1FD391D100C9B13E /* hackathon-graphic.png in Resources */,
 				D4D0C6021FD3586B00EF9644 /* mlh-logo-color.png in Resources */,
+				D4C814BC1FD391CB00C9B13E /* no-product-image.png in Resources */,
 				D4D0C5DD1FD3582600EF9644 /* LaunchScreen.storyboard in Resources */,
 				D4D0C5DA1FD3582600EF9644 /* Assets.xcassets in Resources */,
 				D4D0C5D81FD3582600EF9644 /* Main.storyboard in Resources */,
@@ -508,6 +519,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4D130CF1FD388CC005E603A /* AdTableViewCell.swift in Sources */,
+				D4C814C01FD3947900C9B13E /* AdViewController.swift in Sources */,
 				D4D0C6071FD365EC00EF9644 /* User.swift in Sources */,
 				D4D0C6051FD365B300EF9644 /* ConnectToAPI.swift in Sources */,
 				D4D0C5D51FD3582600EF9644 /* ViewController.swift in Sources */,

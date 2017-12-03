@@ -28,7 +28,7 @@ class ItemTableViewController: UIViewController, UITableViewDelegate, UITableVie
 		adTable.dataSource = self
 		
 		// Setup the Search Bar
-		searchBar.placeholder = "Search Equipment"
+		searchBar.placeholder = "Search Item"
 		definesPresentationContext = true
 		
 		// Setup Search Bar Delegate
@@ -68,6 +68,14 @@ class ItemTableViewController: UIViewController, UITableViewDelegate, UITableVie
 		}
 		
 		return cell
+	}
+	
+	// MARK: - Segues
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		if let nextScene = segue.destination as? AdViewController, let indexPath = self.adTable.indexPathForSelectedRow {
+			let selected = filteredAds[indexPath.row]
+			nextScene.ad = selected
+		}
 	}
 	
 	func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {

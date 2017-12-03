@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13770" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13770"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -20,7 +20,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" image="mlh-logo-color.png" translatesAutoresizingMaskIntoConstraints="NO" id="jNC-VD-oZt">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" image="hackathon-graphic.png" translatesAutoresizingMaskIntoConstraints="NO" id="jNC-VD-oZt">
                                 <rect key="frame" x="20" y="636.33333333333337" width="335" height="131.66666666666663"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="jNC-VD-oZt" secondAttribute="height" multiplier="28:11" id="tR8-dx-sXl"/>
@@ -84,7 +84,7 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.46274509803921571" green="0.83921568627450982" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="jNC-VD-oZt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="0a1-Yo-epQ"/>
                             <constraint firstItem="bbB-F2-rx1" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="5Px-bX-REl"/>
@@ -112,7 +112,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" image="mlh-logo-color.png" translatesAutoresizingMaskIntoConstraints="NO" id="jdk-JF-tjg">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" image="hackathon-graphic.png" translatesAutoresizingMaskIntoConstraints="NO" id="jdk-JF-tjg">
                                 <rect key="frame" x="20" y="634.66666666666663" width="339" height="133.33333333333337"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="jdk-JF-tjg" secondAttribute="height" multiplier="28:11" id="tn5-bc-uvm"/>
@@ -149,7 +149,7 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.46274509803921571" green="0.83921568627450982" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="jdk-JF-tjg" firstAttribute="width" secondItem="jdk-JF-tjg" secondAttribute="height" multiplier="28:11" id="2hP-Aj-FMh"/>
                             <constraint firstItem="xeP-hq-7XC" firstAttribute="bottom" secondItem="jdk-JF-tjg" secondAttribute="bottom" constant="10" id="56n-nn-gdS"/>
@@ -177,7 +177,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" image="mlh-logo-color.png" translatesAutoresizingMaskIntoConstraints="NO" id="mWG-pE-Thb">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" image="hackathon-graphic.png" translatesAutoresizingMaskIntoConstraints="NO" id="mWG-pE-Thb">
                                 <rect key="frame" x="20" y="636.33333333333337" width="335" height="131.66666666666663"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="mWG-pE-Thb" secondAttribute="height" multiplier="28:11" id="Yxl-PG-26f"/>
@@ -268,7 +268,7 @@
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.46274509803921571" green="0.83921568627450982" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="mWG-pE-Thb" firstAttribute="width" secondItem="mWG-pE-Thb" secondAttribute="height" multiplier="28:11" id="4by-Tu-1hj"/>
                             <constraint firstItem="YMr-lF-Xef" firstAttribute="top" secondItem="jBP-zn-InR" secondAttribute="bottom" constant="40" id="5bR-lx-M9y"/>
@@ -346,7 +346,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="335" height="379.66666666666669"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mlh-logo-color.png" translatesAutoresizingMaskIntoConstraints="NO" id="CDC-Jl-5S5">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no-product-image.png" translatesAutoresizingMaskIntoConstraints="NO" id="CDC-Jl-5S5">
                                                     <rect key="frame" x="10" y="10" width="315" height="315"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="CDC-Jl-5S5" secondAttribute="height" multiplier="1:1" id="byW-cx-DG7"/>
@@ -406,7 +406,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.46274509803921571" green="0.83921568627450982" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="1nY-Ep-ijH" firstAttribute="leading" secondItem="kpx-XO-PeF" secondAttribute="leading" id="61h-60-H2i"/>
                             <constraint firstItem="kpx-XO-PeF" firstAttribute="bottom" secondItem="7hj-bm-sKo" secondAttribute="bottom" constant="20" id="7uX-h1-lVi"/>
@@ -443,12 +443,12 @@
         <!--ITEM_TITLE-->
         <scene sceneID="tOl-z5-Cgs">
             <objects>
-                <viewController id="kqI-hJ-D8W" sceneMemberID="viewController">
+                <viewController id="kqI-hJ-D8W" customClass="AdViewController" customModule="GMU_HackDayiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hH4-3Q-dH6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mlh-logo-color.png" translatesAutoresizingMaskIntoConstraints="NO" id="ENj-bd-V8Y">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no-product-image.png" translatesAutoresizingMaskIntoConstraints="NO" id="ENj-bd-V8Y">
                                 <rect key="frame" x="30" y="126" width="325" height="325"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ENj-bd-V8Y" secondAttribute="height" multiplier="1:1" id="yj0-hZ-dF9"/>
@@ -457,7 +457,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6mu-YD-7Or">
                                 <rect key="frame" x="20" y="471" width="335" height="20.333333333333314"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="ITEM_TITLE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cza-8F-hfU">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="SELLER" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cza-8F-hfU">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="20.333333333333332"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -495,6 +495,12 @@
                         <viewLayoutGuide key="safeArea" id="kus-Od-Kry"/>
                     </view>
                     <navigationItem key="navigationItem" title="ITEM_TITLE" id="XJ0-er-iJA"/>
+                    <connections>
+                        <outlet property="desc" destination="bs0-Ba-Se3" id="4GG-ec-jAO"/>
+                        <outlet property="image" destination="ENj-bd-V8Y" id="aaL-Su-YdB"/>
+                        <outlet property="price" destination="ZIv-Xx-wOY" id="Z9f-9M-W6A"/>
+                        <outlet property="seller" destination="cza-8F-hfU" id="fTj-uU-c8J"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T8Y-Ct-bA3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -502,6 +508,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="mlh-logo-color.png" width="1667" height="702"/>
+        <image name="hackathon-graphic.png" width="700" height="300"/>
+        <image name="no-product-image.png" width="1800" height="1800"/>
     </resources>
 </document>
