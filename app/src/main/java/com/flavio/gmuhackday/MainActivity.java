@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void loginClick(View view) {
-        Intent intent = new Intent(this, AdViewActivity.class);
+        Intent intent = new Intent(this, NavigationActivity.class);
         startActivity(intent);
     }
 }

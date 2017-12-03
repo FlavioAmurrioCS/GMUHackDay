@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:theme="@style/Theme.AppCompat.NoActionBar"
+    android:background="#005f39"
     tools:context="com.flavio.gmuhackday.MainActivity"
     android:gravity="center_vertical">
 
@@ -32,16 +33,17 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
+        android:layout_margin="40dp"
+        android:background="#FC7401"
         android:onClick="registerClick"
         android:text="@string/btn_register" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="#FC7401"
         android:onClick="loginClick"
         android:text="@string/btn_signin" />
 
