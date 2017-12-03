@@ -32,7 +32,8 @@ final class ConnectToAPI {
 										desc: obj.value(forKey: "desc") as! String,
 										price: obj.value(forKey: "price") as! String,
 										seller: obj.value(forKey: "seller") as! String,
-										location: obj.value(forKey: "location") as! String)!
+										location: obj.value(forKey: "location") as! String,
+										image: obj.value(forKey: "image") as! String)!
 							ads.append(ad)
 						}
 						completion(ads, nil)
@@ -199,7 +200,7 @@ final class ConnectToAPI {
 	func validateUser(username: String, code: String, completion: @escaping (User?, String?) -> Void) {
 		Alamofire.request(
 			URL(string: API_URL)!,
-			method: .post,
+			method: .get,
 			parameters: ["type": "validate_user",
 						 "username": username,
 						 "code": code

@@ -17,10 +17,11 @@ class Ad {
 	var price: String
 	var seller: String
 	var location: String
+	var image: String
 	
 	//MARK: Initialization
 	
-	init?(title: String, desc: String, price: String, seller: String, location: String) {
+	init?(title: String, desc: String, price: String, seller: String, location: String, image: String) {
 		
 		// The title must not be empty
 		guard !title.isEmpty else {
@@ -33,6 +34,7 @@ class Ad {
 		self.price = price
 		self.seller = seller
 		self.location = location
+		self.image = image
 	}
 	
 }

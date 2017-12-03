@@ -10,6 +10,7 @@
 		04DA74AA83BD53679327968C /* Pods_GMU_HackDayiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59A4EB0E6154003B869EEAE6 /* Pods_GMU_HackDayiOS.framework */; };
 		14FD4634C855E769A3E673E2 /* Pods_GMU_HackDayiOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F309B224BAE1ADB095F58E75 /* Pods_GMU_HackDayiOSTests.framework */; };
 		8E6F4EFBA26984B6E8D75B4B /* Pods_GMU_HackDayiOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E73BB6BA85B97333D125A67F /* Pods_GMU_HackDayiOSUITests.framework */; };
+		D47C8A961FD387EA000E4A59 /* ItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47C8A951FD387EA000E4A59 /* ItemTableViewController.swift */; };
 		D4D0C5D31FD3582600EF9644 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D0C5D21FD3582600EF9644 /* AppDelegate.swift */; };
 		D4D0C5D51FD3582600EF9644 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D0C5D41FD3582600EF9644 /* ViewController.swift */; };
 		D4D0C5D81FD3582600EF9644 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4D0C5D61FD3582600EF9644 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 		D4D0C6091FD3661C00EF9644 /* Ad.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D0C6081FD3661C00EF9644 /* Ad.swift */; };
 		D4D0C60C1FD36E1900EF9644 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D0C60B1FD36E1900EF9644 /* RegisterViewController.swift */; };
 		D4D0C60E1FD3770100EF9644 /* ValidateUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D0C60D1FD3770100EF9644 /* ValidateUserViewController.swift */; };
+		D4D130CF1FD388CC005E603A /* AdTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D130CE1FD388CC005E603A /* AdTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,7 @@
 		5B1A8F3A4987525FCA7EBA85 /* Pods-GMU HackDayiOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMU HackDayiOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GMU HackDayiOSUITests/Pods-GMU HackDayiOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		96B354E25871078CA00EB476 /* Pods-GMU HackDayiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMU HackDayiOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GMU HackDayiOS/Pods-GMU HackDayiOS.debug.xcconfig"; sourceTree = "<group>"; };
 		BF3D47AE5144B2EB1974E647 /* Pods-GMU HackDayiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMU HackDayiOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-GMU HackDayiOS/Pods-GMU HackDayiOS.release.xcconfig"; sourceTree = "<group>"; };
+		D47C8A951FD387EA000E4A59 /* ItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewController.swift; sourceTree = "<group>"; };
 		D4D0C5CF1FD3582500EF9644 /* GMU HackDayiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GMU HackDayiOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4D0C5D21FD3582600EF9644 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4D0C5D41FD3582600EF9644 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +71,7 @@
 		D4D0C6081FD3661C00EF9644 /* Ad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ad.swift; sourceTree = "<group>"; };
 		D4D0C60B1FD36E1900EF9644 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		D4D0C60D1FD3770100EF9644 /* ValidateUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateUserViewController.swift; sourceTree = "<group>"; };
+		D4D130CE1FD388CC005E603A /* AdTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdTableViewCell.swift; sourceTree = "<group>"; };
 		E73BB6BA85B97333D125A67F /* Pods_GMU_HackDayiOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GMU_HackDayiOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1F3F5AF4936776378D55F6C /* Pods-GMU HackDayiOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMU HackDayiOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GMU HackDayiOSTests/Pods-GMU HackDayiOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		F309B224BAE1ADB095F58E75 /* Pods_GMU_HackDayiOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GMU_HackDayiOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -184,6 +188,8 @@
 				D4D0C5D41FD3582600EF9644 /* ViewController.swift */,
 				D4D0C60B1FD36E1900EF9644 /* RegisterViewController.swift */,
 				D4D0C60D1FD3770100EF9644 /* ValidateUserViewController.swift */,
+				D47C8A951FD387EA000E4A59 /* ItemTableViewController.swift */,
+				D4D130CE1FD388CC005E603A /* AdTableViewCell.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -501,12 +507,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4D130CF1FD388CC005E603A /* AdTableViewCell.swift in Sources */,
 				D4D0C6071FD365EC00EF9644 /* User.swift in Sources */,
 				D4D0C6051FD365B300EF9644 /* ConnectToAPI.swift in Sources */,
 				D4D0C5D51FD3582600EF9644 /* ViewController.swift in Sources */,
 				D4D0C60C1FD36E1900EF9644 /* RegisterViewController.swift in Sources */,
 				D4D0C6091FD3661C00EF9644 /* Ad.swift in Sources */,
 				D4D0C60E1FD3770100EF9644 /* ValidateUserViewController.swift in Sources */,
+				D47C8A961FD387EA000E4A59 /* ItemTableViewController.swift in Sources */,
 				D4D0C5D31FD3582600EF9644 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

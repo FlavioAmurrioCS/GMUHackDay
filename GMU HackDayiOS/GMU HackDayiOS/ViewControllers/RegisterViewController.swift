@@ -88,8 +88,9 @@ class RegisterViewController: UIViewController {
 				
 				// Successful registration
 				let storyboard = UIStoryboard(name: "Main", bundle: nil)
-				let controller = storyboard.instantiateViewController(withIdentifier: "ValidateUserController") as UIViewController
+				let controller = storyboard.instantiateViewController(withIdentifier: "ValidateUserController") as! ValidateUserViewController
 				controller.modalTransitionStyle = UIModalTransitionStyle.flipHorizontal
+				controller.username = self.username.text!
 				self.present(controller, animated: true, completion: nil)
 			} else {
 				// Stop loading
