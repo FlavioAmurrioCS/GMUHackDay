@@ -53,10 +53,14 @@ public class RegisterScreen extends AppCompatActivity {
     private void onFinishGetRequest(String result) {
         if (result.contains("Success")) {
             Toast.makeText(this, "Success", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this, EnterPinScreen.class);
+            intent.putExtra("userName", userStr);
+            startActivity(intent);
         } else {
             Toast.makeText(this, "Failed", Toast.LENGTH_SHORT).show();
         }
-        userName.setText(result);
+        Toast.makeText(this, result, Toast.LENGTH_SHORT).show();
+//        userName.setText(result);
     }
 
 //    private void onFinishGetRequest(String result) {
@@ -89,7 +93,7 @@ public class RegisterScreen extends AppCompatActivity {
         passStr = password.getText().toString();
         userStr = userName.getText().toString();
 
-        apiUrl = API_REGISTER + "&username=" + userStr + "&password=" + passStr + "&first_name=" + firstStr + "&last_name=" + lastStr + "&email=" + emailStr + "&phone=" + phoneStr;
+        apiUrl = API_REGISTER + "&username=" + userStr + "&password=" + passStr + "&first_name=" + firstStr + "&last_name=" + lastStr + "&email=" + emailStr + "&phone=1" + phoneStr;
 
         if (firstStr.equals("") || lastStr.equals("") || passStr.equals("") || userStr.equals("")) {
             Toast.makeText(this, "No Empty Fields", Toast.LENGTH_SHORT).show();
@@ -134,6 +138,17 @@ public class RegisterScreen extends AppCompatActivity {
 
 
     private class HttpGetTask extends AsyncTask<String, Void, String> {
+        private HttpGetTask obj;
+
+        public HttpGetTask newInstance() {
+            if (this.obj == null) {
+                this.obj = new HttpGetTask();
+                return obj;
+            } else {
+                return obj;
+            }
+        }
+
         @Override
         protected String doInBackground(String... params) {
 //            Toast.makeText(getApplicationContext(), "run Async Task", Toast.LENGTH_SHORT).show();
