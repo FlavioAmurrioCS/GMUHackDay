@@ -33,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void loginClick(View view) {
+        Intent intent = new Intent(this, NavigationActivity.class);
+        startActivity(intent);
         String username = mUserName.getText().toString();
         String pass = mPassword.getText().toString();
         String apiUrl = "https://netcomm.fourguystech.com/api_hackaday/?type=login_user&username=" + username + "&password=" + pass;

@@ -5,16 +5,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.flavio.gmuhackday.MainActivity">
+    android:theme="@style/Theme.AppCompat.NoActionBar"
+    android:background="#005f39"
+    tools:context="com.flavio.gmuhackday.MainActivity"
+    android:gravity="center_vertical">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="20" />
-
-    <LinearLayout
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:hint="@string/hint_email"
+        android:textAlignment="center" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:hint="@string/hint_password"
+        android:textAlignment="center" />
         android:gravity="center"
         android:orientation="vertical">
 
@@ -70,8 +80,17 @@
             android:text="Register"
             android:onClick="registerClick"/>
 
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
 
-    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:background="#FC7401"
+        android:onClick="registerClick"
+        android:text="@string/btn_register" />
 
     <Button
         android:layout_width="wrap_content"
@@ -81,8 +100,12 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="20" />
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="#FC7401"
+        android:onClick="loginClick"
+        android:text="@string/btn_signin" />
 
 
 </LinearLayout>
