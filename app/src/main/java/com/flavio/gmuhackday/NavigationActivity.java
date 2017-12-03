@@ -109,14 +109,14 @@ public class NavigationActivity extends AppCompatActivity {
                 case 1:
                     return SellView.newInstance();
                 default:
-                    return AdView.newInstance();
+                    return null;
             }
         }
 
         @Override
         public int getCount() {
             // Show 3 total pages.
-            return 3;
+            return 2;
         }
     }
 

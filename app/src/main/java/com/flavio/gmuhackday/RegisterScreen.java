@@ -29,10 +29,19 @@ public class RegisterScreen extends AppCompatActivity {
     String firstStr, lastStr, emailStr, phoneStr, passStr, userStr;
     String apiUrl;
     String API_REGISTER = "https://netcomm.fourguystech.com/api_hackaday/?type=register_user";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_screen);
+
+
+        firstName = findViewById(R.id.firstName);
+        lastName = findViewById(R.id.lastName);
+        email = findViewById(R.id.email);
+        phone = findViewById(R.id.phone);
+        password = findViewById(R.id.password);
+        userName = findViewById(R.id.userName);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         toolbar.setNavigationIcon(R.drawable.ic_keyboard_arrow_left_white_24dp);
@@ -65,13 +74,6 @@ public class RegisterScreen extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
-      
-        firstName = findViewById(R.id.firstName);
-        lastName = findViewById(R.id.lastName);
-        email = findViewById(R.id.email);
-        phone = findViewById(R.id.phone);
-        password = findViewById(R.id.password);
-        userName = findViewById(R.id.userName);
     }
 
     public void signUpClick(View view) {
@@ -99,26 +101,6 @@ public class RegisterScreen extends AppCompatActivity {
 //        userName.setText(result);
     }
 
-//    private void onFinishGetRequest(String result) {
-//        try {
-//
-//            JSONArray earthquakes = (new JSONArray(result));
-//            int len = earthquakes.length();
-//            for (int i = 0;i<len; i++) {
-//                JSONObject quake = earthquakes.getJSONObject(i);
-//                String region = quake.getString("region");
-//                String mag = quake.getString("magnitude");
-//                String occurred = quake.getString("occurred_at");
-//                // get Lat/Long here
-//
-//                adapter.add(region + "  with magnitude = " + mag + " on " + occurred);
-//            }
-//            adapter.notifyDataSetChanged();
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
-//
-//    }
 
     public boolean checkFields() {
         boolean total = true;
@@ -146,44 +128,7 @@ public class RegisterScreen extends AppCompatActivity {
         return total;
     }
 
-
-    public String sendInfoToServer() {
-        String API_REGISTER = "https://netcomm.fourguystech.com/api_hackaday/?type=register_user&";
-//        username=famurrio&password=1234&first_name=Flavio&last_name=Amurrio&email=famurrio@gmu.edu&phone=17036553443";
-        // Send All information to server here for registration
-        HttpURLConnection urlConnection = null;
-        try {
-            URL url = new URL(API_REGISTER + "username=" + userStr + "&password=" + passStr + "&first_name=" + firstStr + "&last_name=" + lastStr + "&email=" + emailStr + "&phone=" + phoneStr);
-            urlConnection = (HttpURLConnection) url.openConnection();
-
-            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
-            StringBuilder stringBuilder = new StringBuilder();
-            String line;
-            while ((line = bufferedReader.readLine()) != null) {
-                stringBuilder.append(line).append("\n");
-            }
-            bufferedReader.close();
-            return stringBuilder.toString();
-        } catch (Exception e) {
-            Log.e("ERROR", e.getMessage(), e);
-            return null;
-        } finally {
-            urlConnection.disconnect();
-        }
-    }
-
-
     private class HttpGetTask extends AsyncTask<String, Void, String> {
-        private HttpGetTask obj;
-
-        public HttpGetTask newInstance() {
-            if (this.obj == null) {
-                this.obj = new HttpGetTask();
-                return obj;
-            } else {
-                return obj;
-            }
-        }
 
         @Override
         protected String doInBackground(String... params) {

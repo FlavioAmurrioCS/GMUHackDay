@@ -10,23 +10,23 @@
     tools:context="com.flavio.gmuhackday.MainActivity"
     android:gravity="center_vertical">
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
-        android:hint="@string/hint_email"
-        android:textAlignment="center" />
+    <!--<EditText-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:paddingStart="20dp"-->
+        <!--android:paddingEnd="20dp"-->
+        <!--android:hint="@string/hint_email"-->
+        <!--android:textAlignment="center" />-->
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
-        android:hint="@string/hint_password"
-        android:textAlignment="center" />
-        android:gravity="center"
-        android:orientation="vertical">
+    <!--<EditText-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:paddingStart="20dp"-->
+        <!--android:paddingEnd="20dp"-->
+        <!--android:hint="@string/hint_password"-->
+        <!--android:textAlignment="center" />-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="vertical">-->
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -37,7 +37,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Email: " />
+                android:text="UserName: " />
 
             <EditText
                 android:layout_width="wrap_content"
@@ -68,17 +68,17 @@
 
         </LinearLayout>
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Login"
-            android:onClick="loginClick"/>
+        <!--<Button-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Login"-->
+            <!--android:onClick="loginClick"/>-->
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Register"
-            android:onClick="registerClick"/>
+        <!--<Button-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Register"-->
+            <!--android:onClick="registerClick"/>-->
 
     <Space
         android:layout_width="match_parent"
@@ -89,23 +89,27 @@
         android:layout_height="wrap_content"
         android:layout_margin="40dp"
         android:background="#FC7401"
+        android:onClick="loginClick"
+        android:text="Log In" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:background="#FC7401"
         android:onClick="registerClick"
         android:text="@string/btn_register" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Call Api"
-        android:onClick="showApiCall"/>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp"
-        android:background="#FC7401"
-        android:onClick="loginClick"
-        android:text="@string/btn_signin" />
+
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="40dp"-->
+        <!--android:layout_marginRight="40dp"-->
+        <!--android:background="#FC7401"-->
+        <!--android:onClick="loginClick"-->
+        <!--android:text="@string/btn_signin" />-->
 
 
 </LinearLayout>

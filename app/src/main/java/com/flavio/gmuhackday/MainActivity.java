@@ -33,8 +33,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void loginClick(View view) {
-        Intent intent = new Intent(this, NavigationActivity.class);
-        startActivity(intent);
+//        Intent intent = new Intent(this, NavigationActivity.class);
+//        startActivity(intent);
         String username = mUserName.getText().toString();
         String pass = mPassword.getText().toString();
         String apiUrl = "https://netcomm.fourguystech.com/api_hackaday/?type=login_user&username=" + username + "&password=" + pass;
@@ -44,48 +44,48 @@ public class MainActivity extends AppCompatActivity {
     public void onFinishGetRequest(String result) {
         Toast.makeText(this, result, Toast.LENGTH_LONG).show();
         if (result.contains(": false,")) {
-            Intent intent = new Intent(this, AdViewActivity.class);
+            Intent intent = new Intent(this, NavigationActivity.class);
             startActivity(intent);
         }
 
     }
 
-    public static String apiCall(String urlAddress) {
-        StringBuffer data = new StringBuffer();
-        BufferedReader br = null;
-        try {
-            HttpURLConnection conn = (HttpURLConnection) new
-                    URL(urlAddress).openConnection();
-            br = new BufferedReader(new InputStreamReader(conn.getInputStream()));
-            String rawData;
-            while ((rawData = br.readLine()) != null) {
-                data.append(rawData);
-            }
-        } catch (MalformedURLException e1) {
-            e1.printStackTrace();
-        } catch (IOException e1) {
-            e1.printStackTrace();
-        } finally {
-            if (br != null)
-                try {
-                    br.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-        }
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        return data.toString();
-    }
+//    public static String apiCall(String urlAddress) {
+//        StringBuffer data = new StringBuffer();
+//        BufferedReader br = null;
+//        try {
+//            HttpURLConnection conn = (HttpURLConnection) new
+//                    URL(urlAddress).openConnection();
+//            br = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+//            String rawData;
+//            while ((rawData = br.readLine()) != null) {
+//                data.append(rawData);
+//            }
+//        } catch (MalformedURLException e1) {
+//            e1.printStackTrace();
+//        } catch (IOException e1) {
+//            e1.printStackTrace();
+//        } finally {
+//            if (br != null)
+//                try {
+//                    br.close();
+//                } catch (IOException e) {
+//                    e.printStackTrace();
+//                }
+//        }
+//        try {
+//            Thread.sleep(3000);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
+//        return data.toString();
+//    }
 
-    public void showApiCall(View view) {
-        String API_REGISTER = "https://netcomm.fourguystech.com/api_hackaday/?type=register_user&username=famurrio&password=1234&first_name=Flavio&last_name=Amurrio&email=famurrio@gmu.edu&phone=17036553443";
-        String result = apiCall(API_REGISTER);
-        Toast.makeText(this, result, Toast.LENGTH_LONG).show();
-    }
+//    public void showApiCall(View view) {
+//        String API_REGISTER = "https://netcomm.fourguystech.com/api_hackaday/?type=register_user&username=famurrio&password=1234&first_name=Flavio&last_name=Amurrio&email=famurrio@gmu.edu&phone=17036553443";
+//        String result = apiCall(API_REGISTER);
+//        Toast.makeText(this, result, Toast.LENGTH_LONG).show();
+//    }
 
 
     private class HttpGetTask extends AsyncTask<String, Void, String> {
